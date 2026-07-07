@@ -1,7 +1,5 @@
 # Sentence segmenter
 
-[![tests](https://github.com/wikimedia/sentencex-go/actions/workflows/test.yml/badge.svg)](https://github.com/wikimedia/sentencex-go/actions/workflows/test.yml)
-
 A sentence segmentation library in Go language with wide language support optimized for speed and utility.
 
 > This is a Go language port of the original [sentencex](https://github.com/wikimedia/sentencex) library. A javascript/node port also exists [sentencex-js](https://github.com/wikimedia/sentencex-js)
@@ -34,7 +32,7 @@ The sentence segmentation in this library is **non-destructive**. This means, if
 Install the library using
 
 ```bash
-go get -u github.com/wikimedia/sentencex-go
+go get -u github.com/austinjp/sentencex
 ```
 
 Then, any text can be segmented as follows.
@@ -44,7 +42,7 @@ Then, any text can be segmented as follows.
 
     import (
         "fmt"
-        "github.com/wikimedia/sentencex-go/languages"
+        "github.com/austinjp/sentencex/languages"
     )
 
     func main() {

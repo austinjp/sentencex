@@ -1,4 +1,4 @@
-module github.com/austin/sentencex
+module github.com/austinjp/sentencex
 
 go 1.26.1
 
