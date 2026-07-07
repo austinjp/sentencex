@@ -6,7 +6,7 @@ import (
 	"os"
 	"regexp"
 
-	"github.com/wikimedia/sentencex-go/languages"
+	"github.com/austinjp/sentencex/languages"
 )
 
 var consecutiveNewlineRegex = regexp.MustCompile(`[\r\n]{2}`)

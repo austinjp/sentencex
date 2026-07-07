@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/wikimedia/sentencex-go/languages"
+	"github.com/austinjp/sentencex/languages"
 )
 
 type SegmentationTest struct {

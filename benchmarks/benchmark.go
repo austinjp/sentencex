@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wikimedia/sentencex-go/languages"
+	"github.com/austinjp/sentencex/languages"
 )
 
 type SegmentationTest struct {
