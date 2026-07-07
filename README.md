@@ -44,19 +44,20 @@ Then, any text can be segmented as follows.
 
     import (
         "fmt"
-        "github.com/wikimedia/sentencex-go"
+        "github.com/wikimedia/sentencex-go/languages"
     )
 
     func main() {
         text := `
         The James Webb Space Telescope (JWST) is a space telescope specifically designed to conduct infrared astronomy. The U.S. National Aeronautics and Space Administration (NASA) led Webb's design and development.
         `
-        sentences := sentencex.Segment("en", text)
+        factory := languages.LanguageFactory{}
+        lang := factory.CreateLanguage("en")
+        sentences := lang.Segment(text)
         for _, sentence := range sentences {
             fmt.Println(sentence)
         }
     }
-
 ```
 
 The first argument is language code, second argument is text to segment. The `segment` method returns an array of identified sentences.
